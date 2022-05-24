@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyce黃郁淇</title>
+    <link rel="icon" href="aqpkc-aobis-001.ico">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        font-family: Microsoft JhengHei;
+    }
+    .nav-link:hover{
+        color: aliceblue !important;
+    }
+    h4{
+        border-bottom: 1px solid;
+    }
+    ul>li{
+        margin: 10px 0;
+        font-size: 20px;
+        border: none;
+    }
+    .list-group-item{
+        border: none;
+    }
+    .footer>p, .footer>h5{
+        text-align: center;
+        font-size: 18px;
+        color: #7e7e7e;
+    }
+    .inlinerow{
+        margin-top: 100px;
+    }
+    .right{
+        border-left: 10px double;
+        border-bottom: 10px double;
+        box-shadow: 8px 5px 5px 0px rgb(141, 141, 141);
+        border-right: 10px double;
+        border-top: 10px double;
+        padding: 30px;       
+        border-color: #a06e5f;
+        border-radius: 10px 50px;
+    }
+    .left{
+        border-left: 10px double;
+        border-bottom: 10px double;
+        box-shadow: -8px 5px 5px 0px rgb(141, 141, 141);
+        border-right: 10px double;
+        border-top: 10px double;
+        padding: 30px;       
+        border-color: #a06e5f;
+        border-radius: 50px 10px;
+    }
+    .header
+    {
+        animation: example 5s linear 2s infinite alternate;
+    }
+    @keyframes example {
+        0%   {color:red; left:0px; top:0px;}
+        25%  {color:yellow; left:200px; top:0px;}
+        50%  {color:blue; left:200px; top:200px;}
+        75%  {color:green; left:0px; top:200px;}
+        100% {color:red; left:0px; top:0px;}
+        }
+</style>
+<body>
+    <div class="container-fluid ">
+        <div class="row bg-warning p-2  bg-opacity-50 fixed-top" style="margin: 0 0 10px 0;">
+            <div class="col text-dark">
+                <h1 class="header">Portfolio</h1>
+            </div>
+            <div class="col align-items-center d-flex justify-content-end ">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-black" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-black" href="#web">Web</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-black" href="#vr">VR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black"  href="#movie">Movie</a>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+        <div class="row d-flex" style="height: 100px;"></div>
+        <div class="row d-flex" >
+            <div class="col">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="2.png" class="d-flex" alt="..." style="width: 90%;margin: 0 auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          <!-- <h3 class="" style="text-align: start;">學測測驗平台</h5> -->
+                          <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="3.png" class="d-flex" alt="..." style="width: 90%;margin: 0 auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          <!-- <h5>Eet Credit Ball</h5>
+                          <p>Some representative placeholder content for the second slide.</p> -->
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="4.png" class="d-flex" alt="..." style="width: 90%;margin: 0 auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          <!-- <h5 >魔術電玩</h5>
+                          <p>Some representative placeholder content for the third slide.</p> -->
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center" style=" width: 90%; margin: 0 auto;" id="about">
+            <div class="col-12 " >
+                <h1 style="text-align: center ;margin: 100px 0;">About Me</h1>
+            </div>
+            <div class="col-3" >
+                <img src="joyce.jpg" alt="" style=" border-radius: 40% 0%; width: 80%; box-shadow: 5px 5px 9px 3px #81797947;">
+            </div>
+            <div class="col-5" style="height: 575px;">
+                <b><h4>Competition </h2></b>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">參加Shopee Code League 2022.03.19</li>
+                    <li class="list-group-item">參加元智大學 VR/AR 教育競賽進入決賽 2021.12.17</li>
+                </ul>
+                <b><h4>Cooperation </h2></b>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ＶＲ製作模擬失智症患者與三總醫院合作 2021.10~2022.04</li>
+                </ul>
+                <b><h4>School Club </h2></b>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Code-club讀書會每個禮拜寫三道LeetCode題目 2021.01</li>
+                    <li class="list-group-item">輔導義工五酒桶山淨山 2020.05.17</li>
+                    <li class="list-group-item">輔導義工 大溪長照服務中心陪伴老人 2019.12.08
+                    <li class="list-group-item">主辦 2019 年林口高中新生訓練  2019.06.26~2019.08.15</li>
+                </ul>
+            </div>
+            <div class="col-4"style="height: 575px;">
+                <b><h4>Education </h2></b>
+                <ul class="list-group list-group-flush" >
+                    <b><li class="list-group-item" style="border: none;">
+                        <img src="YZULogo.png" alt="" style="width: 32%;">
+                        元智大學 資訊傳播學系 科技組
+                    </li></b>
+                    <li class="list-group-item" style="border: none;"></li>
+                    <li class="list-group-item" style="border: none;"></li>
+                    <b><li class="list-group-item" style="border: none;">
+                        <img src="LKLogo.png" alt="" style="width: 32%;">
+                        新北市立林口高級中學 普通科</li></b>
+                </ul>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center"  style="width: 90%; margin: 0 auto;"  id="web">
+            <div class="col-12 ">
+                <h1 style="text-align: center ;margin: 100px 0 0 0;">Web Project</h1>
+            </div>
+            <div class="col-5 inlinerow" >
+                <img src="Coming Soon!.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-7 inlinerow right" >
+                <b><h3>IBANK</h3></b>
+                <ul>
+                    <li>此網站是模仿網路銀行，提供使用者可以轉帳及匯率轉換，專案還在製作中尚未完成。</li>
+                    <li>我在專案中製作切版以及串接API和轉帳功能撰寫。前端使用React搭配React Bootstrap切版，後端使用PHP搭配MySQL</li>
+                    <li>功能包括：會員系統、匯率轉換、模擬轉帳功能，驗證部分利用簡訊驗證系統代替銀行第三方認證</li>
+                    <a href="https://github.com/Huang-joyce/iBank_new"><li>GitHub：https://github.com/Huang-joyce/iBank_new</li></a>
+                </ul>
+            </div>
+            <div class="col-7 inlinerow left" >
+                <b><h3>學測測驗平台</h3></b>
+                <ul>
+                    <li>此網站主要提供線上考試服務，讓使用者隨時都可以考試不必要背著厚重的參考書。</li>
+                    <li>我在專案中製作網頁初版樣式設計、登入註冊系統(Session+Passport)、考試時間（強制提交）、考試題目抓取（json檔）</li>
+                    <li>前端使用Bootstrap切版、使用JavaScript寫功能，後端使用Node Express + Session+Passport搭配 MongoD</li>
+                    <li>功能包括：會員系統、答案下載、考試系統，模擬真實考試</li>
+                    <a href="https://github.com/Huang-joyce/Final-Project"><li>GitHub：https://github.com/Huang-joyce/Final-Project</li></a>
+                </ul>
+
+            </div>
+            <div class="col-5 inlinerow" >
+                <img src="2.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-5 inlinerow" >
+                <img src="3.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-7 inlinerow right">
+                <b><h3>Eat Credit Ball</h3></b>
+                <ul>
+                    <li>以修足指定學分才能畢業是每位大學生都要共同面對的課題為發想點，我們認為獲得學分有很多的挑戰，像是報告、成績、表現行為等，所以我們想出有關於學業主題的遊戲，來代表大學生達到畢業門檻的艱辛。</li>
+                    <li>此專案是一個2D網頁遊戲使用Phaser製作，像素風的遊戲將遊戲中的得分看作是大學的學分。</li>
+                    <li>我在專案中製作關卡地圖、砲台射擊、齒輪攻擊、隨機出現道具及學分球、人物移動</li>
+                    <a href="https://github.com/Huang-joyce/Eat-credit-ball"><li>GitHub：https://github.com/Huang-joyce/Eat-credit-ball</li></a>
+                </ul>
+            </div>
+            <div class="col-7 inlinerow left" >
+                <b><h3>魔術電玩</h3></b>
+                <ul> 
+                    <li>動物森友會瘋迷全球，每個人都在玩，而裡面的商機無限，可以透過販賣道具、素材去賺錢。朋友剛好在蝦皮上經營一間店，我想說藉著這個機會幫朋友試著寫一個網站，讓更多人可以知道他們，促進銷售增加。</li>
+                    <li>主要是在蝦皮販售為了讓更多人知道，製作網頁推廣賣場資訊以及所販賣的商品。</li>
+                    <li>前端使用Bootstrap切版</li>
+                    <li>功能包括：商品瀏覽、最新消息</li>
+                    <a href="https://github.com/Huang-joyce/Final-Project"><li>GitHub：https://github.com/Huang-joyce/Final-Project</li></a>
+                </ul>
+
+            </div>
+            <div class="col-5 inlinerow" >
+                <img src="4.png" alt="" style="width: 100%;">
+            </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center" style=" width: 90%; margin: 0 auto;" id="vr">
+            <div class="col-12 " >
+                <h1 style="text-align: center ;margin: 100px 0;">VR Project</h1>
+            </div>
+            <div class="col-4 inlinerow left" >
+                <b><h3>模擬失智患者</h3></b>
+                <ul> 
+                    <li>發想:高齡化的社會，老人越來越多，大家也越來越重視這個問題，許多年輕人都不太知道該怎麼照顧老人。</li>
+                    <li>目的:很多事情不是書上可以教到的，都是要透過真實的案例所發生的事情去學習該如何應對，我們擷取了7個不同的案例，讓護理師可以判斷該如何去應對解決問題。</li>
+                    <li>軟體:主要利用Cospaces去製作專案，場景的搭建、人物的對話及動作反應，盡可能最真實的呈現原貌。</li>
+                    <li>主要負責內容:案例二：場景建置、程式碼撰寫、案例六：場景建置、程式碼撰寫</li>
+                    <a href="https://edu.cospaces.io/MKL-QET"><li>https://edu.cospaces.io/MKL-QET</li></a>
+                </ul>
+            </div>
+            <div class="col-8 inlinerow" >
+                <img src="5.png" alt="" style="width: 49%;">
+                <img src="7.png" alt="" style="width: 49%;">
+                <img src="8.png" alt="" style="width: 49%;">
+                <img src="9.png" alt="" style="width: 49%;">
+            </div>
+        </div>
+        <div class="row d-flex  align-items-center justify-content-center"  style=" width: 90%; margin: 0 auto;" id="movie">
+            <div class="col-12 " >
+                <h1 style="text-align: center ;margin: 100px 0;">Movie Project</h1>
+            </div>
+            <div class="col-5" style="margin: 0 0 50px 0; ">
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/9wmN0lxMLYU?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-6 right" style="margin: 0 0 50px 0; ">
+                <ul> 
+                    <li>影片主題:不一樣餐廳 </li>
+                    <li>影片宗旨:以第一人稱，實際帶大家進入龍崗，並介紹龍岡經各種文化融合後所形成的飲食及其特色，讓大家可以了解到龍崗的特色。 </li>
+                    <li>影片特色:我們利用探索各地美食的角度，去找尋存在民間的美食，由當地人所推薦的特色小吃，一探究竟 『不一樣的餐廳』，有多麼不ㄧ樣呢，利用訪談、訪問 了解當地的口味，再加上旁白的講解更讓觀眾不僅獲得 美食的資訊還能知道一些關於香料的知識</li>
+                    <li>主要負責內容:主持人（圖右）、攝影協助、花絮拍攝</li>
+                    <a href="https://edu.cospaces.io/MKL-QET"><li>https://edu.cospaces.io/MKL-QET</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="row d-flex bg-warning p-2  bg-opacity-50 footer align-items-center justify-content-center">
+                <!-- <h5>聯絡資訊</h5> -->
+                <p >Email：joyce890926@gmail.com　電話：0963558561　GitHub：https://github.com/Huang-joyce</p>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+
+</script>
